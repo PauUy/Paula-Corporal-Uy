@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PersonalPortfolio</title>
+    <!-- BootStrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Extenal CSS -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <!-- Font-family link -->
+    
+
+
+    <!-- Jscript Link -->
+  
+  <script src="index.js" defer></script> <!-- Ensure the script is included -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+<body>
+    <header>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+    <div class="container">
+        <a class="navbar-brand" asp-area="" asp-page="/Index">Paula</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#landing">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+    
+    </div>
+</nav>
+
+
+    </header>
+
+    <div class="container position-relative">
+        <img src="./images/stargif.gif" alt="star gif" class="stargifdesign" />
+        <img src="./images/moonunicorncatgif.gif" alt="cat moon gif" class="catimage1" />
+        <img src="./images/sleepingcatsgif.gif" alt="sleeping cat gif" class="catimage2" />
+        <main role="main" class="pb-3">
+            <!-- Your merged code starts here -->
+
+            <div class="landingpage">
+                <!-- Landing Section Start -->
+                <section id="landing" class="row justify-content-center align-items-center">
+                    <div class="col-md-4 d-flex justify-content-end">
+                        <img src="./images/sayinggif.gif" alt="photo of me" class="img-fluid round-image" />
+                    </div>  
+                    <div class="col-md-5 d-flex flex-column align-items-start">
+                        <h5>Hi! I'm</h5>
+                        <h1><span>Paula Uy</span></h1>
+                        <h2 class="changecontent"></h2>
+                        <div class="mt-3 justify-content-start">
+                        <a href="./files/Paula Corporal Uy.pdf" class="btn btn-color-1 me-2 btn-line d-none d-sm-inline" download="Paula_Corporal_Uy_CV.pdf">Download CV</a>
+                            <a href="#contact" class="btn btn-color-2 btn-line d-none d-sm-inline">Let's Talk</a>
+                        </div>
+                        <div class="grid-container">
+                            <a href="https://www.linkedin.com/in/paula-uy-208893227/" target="_blank">
+                                <img src="./images/linked.jpg" alt="My LinkedIn Profile" class="code-acct" />
+                            </a>
+                            <a href="https://github.com/PauUy" target="_blank">
+                                <img src="./images/github.png" alt="My GitHub Profile" class="code-acct" />
+                            </a>
+                            <a href="https://gitlab.com/paulauy.25/capstone" target="_blank">
+                                <img src="./images/gitlab.png" alt="My GitLab Profile" class="code-acct" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Landing Section End -->
+            </div>
+
+            <!-- About Me Section -->
+            <section id="about" class="container aboutme-padding background-image-about">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center mb-4">
+                        <a class="get-to-know-link" href="#about">Get To Know More</a>
+                        <h1>About Me</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center mb-4">
+                        <img id="slideshow" src="./images/pix3.jpg" alt="My photo 2" class="img-fluid square-image" />
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="row row-space mb-4">
+                            <div class="col-12 col-md-6 text-center standard-card mb-4">
+                                <div class="icon-container">
+                                    <img src="./images/workicon.png" class="iconwork" />
+                                </div>
+                                <h2>Work Experience</h2>
+                                <p>Consultant Software Engineer (Full Stack)</p>
+                                <p>Associate Software Engineer</p>
+                            </div>
+                            <div class="col-12 col-md-6 text-center standard-card mb-4">
+                                <div class="icon-container">
+                                    <img src="./images/educicon.png" class="iconeduc" />
+                                </div>
+                                <h2>Education</h2>
+                                <h4>Bachelor's Degree</h4>
+                                <p>Bachelor of Science in Information Technology</p>
+                            </div>
+                        </div>
+                        <div class="aboutme-info">
+                            <p>
+                                I am an aspiring Developer with hands-on experience in C# and SQL,
+                                specifically using the .NET framework to develop web applications.
+                                I have managed time-sensitive updates, including content changes and database upgrades,
+                                and have been involved in both front-end and back-end development. Additionally,
+                                I have worked with Oracle PL/SQL, handling database tickets and ensuring system optimization.
+                                As a BSIT graduate, I have experience working in Agile environments,
+                                maintaining and documenting systems for support.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Me Section end -->
+
+            <!-- Tools I use-->
+            <section id="tools" class="container toolssue">
+                <div class="row">
+                    <div class="col text-center">
+                        <a class="expereinces-with-link" href="#tools">Experiences with</a>
+                        <h1>Tools and Technologies</h1>
+                        <div class="row align-items-center row-space">
+                            <div class="col-12 col-md-12 standard-card">
+                                <div class="row">
+                                    <div class="tools1 col-md-6 text-start fade-in">
+                                        <div class="iconcodeed-container d-flex align-items-center">
+                                            <img src="./images/aspneticon.jpg" class="iconcodeed" alt="Codeed Icon">
+                                            <h3>ASP.Net</h3>
+                                        </div>
+                                        <div class="iconcodeed-container d-flex align-items-center">
+                                            <img src="./images/htmlicon.png" class="iconcodeed" alt="Codeed Icon">
+                                            <h3>HTML</h3>
+                                        </div>
+                                        <div class="iconcodeed-container d-flex align-items-center">
+                                            <img src="./images/cssicon.png" class="iconcodeed" alt="Codeed Icon">
+                                            <h3>CSS</h3>
+                                        </div>
+                                        <div class="iconcodeed-container d-flex align-items-center">
+                                            <img src="./images/bootstrapicon.png" class="iconcodeed" alt="Codeed Icon">
+                                            <h3>Bootstrap</h3>
+                                        </div>
+                                    </div>
+                                    <div class="tools2 col-md-6 text-start fade-in">
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/nodejsicon.png" class="iconcodeed" alt="Codeed Icon">
+                                            <h3>Node.js</h3>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/mysqlicon.png" class="iconcodeed" alt="Codeed Icon">
+                                            <h3>MySQL</h3>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/mongodbicon.png" class="iconcodeed" alt="Codeed Icon">
+                                            <h3>MongoDB</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tools I use end-->
+
+           <!---Project section-->
+<section id="projects" class="container">
+    <div class="row justify-content-center">
+        <div class="col text-center mb-4">
+            <a class="projects-i-work" href="#projects">Take a look at some of the projects I've worked on</a>
+            <h1 class="projectmove">Projects</h1>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-xl-4 mb-5 card-animation">
+            <div class="card pastel-card pastel-pink h-100">
+                <div class="card-body d-flex flex-column">
+                    <img src="./images/proj2.jpg" class="img-fluid" alt="Enrollment System">
+                    <h5 class="card-title mt-3 text-dark text-center">Enrollment System</h5>
+                    <p class="card-text text-dark">
+                        Engage with a team that developed an enrollment system that streamlines the process of enrolling students in a Elementary to High school. The system includes a user-friendly interface that allows students to browse and select courses based on their interests, schedule, and availability. It also includes a feature that enables students to track their academic progress, view their grades and transcripts, and plan their future coursework.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 mb-5 card-animation">
+            <div class="card pastel-card pastel-yellow h-100">
+                <div class="card-body d-flex flex-column">
+                    <img src="./images/proj1.jpg" class="img-fluid" alt="Modules">
+                    <h5 class="card-title mt-3 text-dark text-center">Modules</h5>
+                    <p class="card-text text-dark">
+                        Modifying old source code by creating modules. I also ensure that my code integrates well with the existing codebase and that it doesn't introduce any bugs or conflicts.Modifying old source code can be a challenging task, but it's also an opportunity to learn and improve my coding skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 mb-5 card-animation">
+            <div class="card pastel-card pastel-green h-100">
+                <div class="card-body d-flex flex-column">
+                    <img src="./images/proj3.jpg" class="img-fluid" alt="SFTP">
+                    <h5 class="card-title mt-3 text-dark text-center">SFTP</h5>
+                    <p class="card-text text-dark">
+                        I was tasked on developing SFTP using programming languages C# and MySQL, SFTP can be used for a variety of purposes, including remote file backup, file sharing between different systems, and secure data exchange between different organizations. It is commonly used in industries such as finance, healthcare, and government, where data security is critical.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Projects Section End -->
+
+<!-- Contact Section Start -->
+<section id="contact" class="container contact-section">
+    <div class="row justify-content-center">
+        <div class="col text-center">
+            <h1>Contact Me</h1>
+            <p>If you'd like to get in touch, feel free to reach me through any of these below:</p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center contact-info">
+            <p>Email: <a href="paulauy.25@gmail.com">paulauy.25@gmail.com</a></p>
+            <p>Viber/WhatsApp: <a href="tel:+63 9064357069">+63 9064357069</a></p>
+            <p>
+                Follow me on:
+                <a href="https://www.facebook.com/paulajingrose.uy/" target="_blank">Facebook</a> |
+                <a href="https://www.linkedin.com/in/paula-uy-208893227/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
+
+            <!-- Your merged code ends here -->
+        </main>
+        <footer>
+            <div class="container text-center">
+                <p>&copy; 2024 Paula Uy</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
